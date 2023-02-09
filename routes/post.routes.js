@@ -41,10 +41,6 @@ router.post("create", async (req, res, next) => {
 })
 
 
-
-
-
-
 //GET "api/post/:postId/details" => shows specific post
 router.get("/:postId/details", async (req, res, next) => {
     
