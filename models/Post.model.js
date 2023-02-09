@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const postSchema = new Schema(
 
     {
-        titulo: {
+        title: {
             type: String,
             required: true,
         },
@@ -12,15 +12,15 @@ const postSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: "User",
         },
-        texto: String,
-        imagen: {
+        text: String,
+        image: {
             type: String,
             default:
                 "https://res.cloudinary.com/ddzhdj4yd/image/upload/v1668514029/whatcha-cookin/RecetaDefault_lxygod.png",
         },
         //TODO cambiar fecha, mirar Worklog App
-        fecha: String,
-        comentario: {
+        date: String,
+        comment: {
             //feeds from Comment.model
             type: Schema.Types.ObjectId,
             ref: "Comment",
